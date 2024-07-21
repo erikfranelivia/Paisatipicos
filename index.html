@@ -3,118 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site para Pais de Autistas</title>
+    <title>Exemplo de Página</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Link para Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-4P1odCRu7sGDAXIooQt1KtR0qz3k4pz1lM5ghgMkTy9jI96J3L4C5YXyI+GGH8vNMDz4l03F9ay21F1dU+dyvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Incluir a Biblioteca ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        /* Adicione o CSS aqui, se não estiver em um arquivo separado */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Cor de fundo do corpo */
+            color: #333; /* Cor padrão do texto */
+            overflow-x: hidden; /* Evita rolagem horizontal */
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1e90ff; /* Azul */
+            color: #fff; /* Branco */
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: floatIn 1s ease-out;
+        }
+
+        /* Navegação */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #1e90ff; /* Azul */
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #007acc; /* Azul mais escuro */
+            transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+        }
+
+        /* Animação dos títulos */
+        @keyframes floatIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            margin: 0 0 1rem 0;
+            font-size: 2rem;
+            animation: floatIn 1s ease-out;
+            color: #1e90ff; /* Azul */
+        }
+
+        /* Seções */
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1e90ff; /* Azul */
+            color: #fff; /* Branco */
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries para dispositivos móveis */
+        @media only screen and (max-width: 768px) {
+            header {
+                padding: 0.5rem 1rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                display: block;
+                padding: 0;
+                background-color: #1e90ff;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 0;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="logosite/logosite.png" alt="Logo" id="logo">
-        <h1>Bem-vindo ao Site para Pais de Autistas</h1>
+        <h1>Meu Site</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li>
-                    <a href="#topics">Temas</a>
-                    <ul class="submenu">
-                        <li><a href="#treatments">Tratamentos</a></li>
-                        <li><a href="#rights">Direitos</a></li>
-                        <li><a href="#cognitive-evolution">Evolução Cognitiva</a></li>
-                    </ul>
-                </li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home">
-        <h2>Home</h2>
-        <p>Este site foi criado com o propósito de oferecer suporte e orientações para pais de crianças autistas, uma jornada que nós, pais fundadores, conhecemos profundamente. A comunidade autista está em constante descoberta e, muitas vezes, enfrenta desafios significativos para encontrar informações e apoio adequados. Foi por isso que decidimos criar este espaço: para compartilhar nossas experiências, aprender juntos e proporcionar um ambiente acolhedor e informativo. Nós também passamos por muitas dificuldades no início, buscando desesperadamente por recursos e respostas que pudessem ajudar nossa própria criança autista. Essa jornada nos inspirou a criar este site, onde esperamos que você encontre não apenas informações úteis, mas também uma comunidade de apoio e compreensão.</p>
-    </section>
-    <section id="about">
-        <h2>Sobre</h2>
-        <p>Nosso objetivo é apoiar pais de crianças autistas, oferecendo recursos e um espaço para compartilhar dúvidas e experiências. Acreditamos que a troca de informações pode fazer a diferença no desenvolvimento e bem-estar das crianças.</p>
-        <img src="imagens/autismo.jpg" alt="Ilustração relacionada ao autismo" width="600" height="300">
-    </section>
-    <section id="treatments">
-        <h2>Tratamentos</h2>
-        <p>Aqui você encontrará informações sobre os diversos tipos de tratamentos disponíveis para crianças autistas, incluindo terapias comportamentais, ocupacionais e de fala.</p>
-        <h3>Análise Comportamental Aplicada (ABA)</h3>
-        <p>A Análise Comportamental Aplicada (ABA) é amplamente utilizada no tratamento do autismo, focando em incentivar comportamentos positivos e desencorajar negativos. Existem diferentes tipos de ABA, como o Treinamento de Teste Discreto, a Intervenção Comportamental Intensiva Precoce e o Modelo de Denver de Início Antecipado. Essas abordagens ajudam a melhorar habilidades sociais, linguísticas e cognitivas em crianças autistas, utilizando atividades lúdicas e reforço positivo. <a href="https://www.apa.org/pt/educacao/carreira/autismo" target="_blank">Saiba mais</a>.</p>
-        <h3>Terapia Ocupacional</h3>
-        <p>A Terapia Ocupacional (TO) ajuda crianças autistas a desenvolver habilidades para atividades diárias, como vestir-se, comer e interagir com outras pessoas. A TO também trabalha com coordenação motora e integração sensorial, melhorando a qualidade de vida e a independência das crianças. <a href="https://www.tuasaude.com/autismo/#tratamento" target="_blank">Saiba mais</a>.</p>
-        <h3>Fonoaudiologia</h3>
-        <p>A Fonoaudiologia é essencial para melhorar as habilidades de comunicação das crianças autistas. Através de sessões com fonoaudiólogos, as crianças aprendem a construir frases, modular a voz e se comunicar de maneira mais eficaz. <a href="https://www.tuasaude.com/autismo/#tratamento" target="_blank">Saiba mais</a>.</p>
-        <h3>Tecnologia Assistiva</h3>
-        <p>Dispositivos de tecnologia assistiva, como tablets e placas de comunicação, ajudam as pessoas com TEA a interagir e se comunicar melhor. Esses dispositivos utilizam símbolos e imagens para ensinar habilidades de comunicação e promover a autonomia. <a href="https://www.apa.org/pt/educacao/carreira/autismo" target="_blank">Saiba mais</a>.</p>
-    </section>
-    <section id="rights">
-        <h2>Direitos</h2>
-        <p>Conheça os direitos das crianças autistas e suas famílias, incluindo acesso a serviços de saúde, educação especial e suporte social.</p>
-        <h3>Lei nº 12.764/2012</h3>
-        <p>A Lei nº 12.764/2012, conhecida como Lei Berenice Piana, institui a Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista. Esta lei garante acesso a tratamento adequado, educação inclusiva e apoio à família, promovendo a inclusão social e o respeito à diversidade. <a href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2012/Lei/L12764.htm" target="_blank">Saiba mais</a>.</p>
-        <h3>Educação Inclusiva</h3>
-        <p>A educação inclusiva é um direito garantido por lei às crianças autistas, permitindo sua integração em escolas regulares com apoio pedagógico especializado. Professores capacitados e adaptações curriculares são essenciais para atender às necessidades educacionais dessas crianças. <a href="https://www.tuasaude.com/autismo/#tratamento" target="_blank">Saiba mais</a>.</p>
-        <h3>Auxílio-Inclusão</h3>
-        <p>O Auxílio-Inclusão é um benefício assistencial destinado a famílias de crianças autistas de baixa renda, oferecendo suporte financeiro para despesas com saúde, educação e qualidade de vida. <a href="https://www.gov.br/cidadania/pt-br/acoes-e-programas/bpc" target="_blank">Saiba mais</a>.</p>
-    </section>
-    <section id="cognitive-evolution">
-        <h2>Evolução Cognitiva</h2>
-        <p>Entenda o desenvolvimento cognitivo das crianças autistas e como promover habilidades sociais, emocionais e intelectuais.</p>
-        <h3>Teoria da Mente</h3>
-        <p>A Teoria da Mente é a capacidade de compreender e atribuir estados mentais aos outros, como crenças, desejos e intenções. Crianças autistas podem apresentar desafios na Teoria da Mente, afetando suas habilidades de comunicação e interação social. <a href="https://www.autismspeaks.org/what-aba" target="_blank">Saiba mais</a>.</p>
-        <h3>Pensamento Visual</h3>
-        <p>O Pensamento Visual é uma forma única de processamento de informações entre crianças autistas, que muitas vezes pensam de maneira visual e espacial. Este estilo de pensamento pode ser valorizado e desenvolvido através de atividades artísticas, jogos de quebra-cabeça e programação visual. <a href="https://www.autismspeaks.org/what-aba" target="_blank">Saiba mais</a>.</p>
-        <h3>Aprendizado Multissensorial</h3>
-        <p>O Aprendizado Multissensorial envolve o uso de múltiplos sentidos (visão, audição, tato) para ensinar novas habilidades. Crianças autistas podem se beneficiar de abordagens multissensoriais, que promovem a retenção de informações e o engajamento no aprendizado. <a href="https://www.autismspeaks.org/what-aba" target="_blank">Saiba mais</a>.</p>
-    </section>
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-posts">
-            <article>
-                <h3>Dicas para Pais de Autistas</h3>
-                <p>Conselhos práticos para lidar com os desafios diários de criar uma criança autista.</p>
-            </article>
-            <article>
-                <h3>Entrevista com Especialista</h3>
-                <p>Uma conversa com um especialista em autismo sobre as últimas pesquisas e tratamentos.</p>
-            </article>
-            <article>
-                <h3>Histórias de Sucesso</h3>
-                <p>Relatos inspiradores de famílias que superaram obstáculos e celebraram conquistas.</p>
-            </article>
-        </div>
-        <button onclick="window.location.href='https://www.autismparentingmagazine.com/'">Ver mais artigos</button>
-    </section>
-    <section id="contact">
-        <h2>Contato</h2>
-        <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+
+    <main>
+        <section>
+            <h2>Bem-vindo!</h2>
+            <p>Conteúdo da página.</p>
+        </section>
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Mais conteúdo.</p>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Site para Pais de Autistas. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
     </footer>
-    <!-- Script para Ativar ScrollReveal -->
-    <script>
-        ScrollReveal().reveal('header', { duration: 2000, origin: 'top', distance: '50px' });
-        ScrollReveal().reveal('#home', { duration: 2000, origin: 'left', distance: '50px' });
-        ScrollReveal().reveal('#about', { duration: 2000, origin: 'right', distance: '50px' });
-        ScrollReveal().reveal('#treatments', { duration: 2000, origin: 'bottom', distance: '50px' });
-        ScrollReveal().reveal('#rights', { duration: 2000, origin: 'left', distance: '50px' });
-        ScrollReveal().reveal('#cognitive-evolution', { duration: 2000, origin: 'right', distance: '50px' });
-        ScrollReveal().reveal('#blog', { duration: 2000, origin: 'bottom', distance: '50px' });
-        ScrollReveal().reveal('#contact', { duration: 2000, origin: 'top', distance: '50px' });
-    </script>
 </body>
 </html>
