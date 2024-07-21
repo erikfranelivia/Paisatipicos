@@ -3,6 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nome do Site]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#nosso-trabalho">Nosso trabalho</a></li>
+                <li><a href="#galeria">Galeria de fotos</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <div class="hero">
+            <h1>Bem-vindo ao [Nome do Site]</h1>
+            <p>Um espaço dedicado a apoiar e orientar pais de crianças autistas.</p>
+            <a href="#sobre-nos" class="btn-principal">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma equipe dedicada a apoiar pais de crianças autistas, compartilhando recursos, experiências e orientações para ajudar a construir um futuro melhor para nossos filhos.</p>
+        <img src="equipe.jpg" alt="Equipe do [Nome do Site]">
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="servico">
+            <img src="consultoria.jpg" alt="Consultoria">
+            <h3>Consultoria Personalizada</h3>
+            <p>Orientações específicas para ajudar no desenvolvimento e nas necessidades diárias.</p>
+        </div>
+        <div class="servico">
+            <img src="apoio.jpg" alt="Apoio">
+            <h3>Apoio Emocional</h3>
+            <p>Grupos de apoio para pais compartilharem suas experiências e receberem suporte.</p>
+        </div>
+    </section>
+
+    <section id="nosso-trabalho">
+        <h2>Nosso Trabalho</h2>
+        <div class="trabalho">
+            <img src="historia1.jpg" alt="História de Sucesso 1">
+            <h3>História de Sucesso</h3>
+            <p>Veja como ajudamos famílias a encontrar soluções e melhorar a qualidade de vida.</p>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Fotos</h2>
+        <div class="galeria-grid">
+            <img src="evento1.jpg" alt="Evento 1">
+            <img src="evento2.jpg" alt="Evento 2">
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-item">
+            <img src="projeto1.jpg" alt="Projeto 1">
+            <h3>Projeto Exemplar</h3>
+            <p>Detalhes sobre o projeto e o impacto que teve na comunidade.</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="envio_contato.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Ou entre em contato conosco através do e-mail: contato@exemplo.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Nome do Site]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pais Atipicos</title>
     <link rel="stylesheet" href="style.css">
     <style>
