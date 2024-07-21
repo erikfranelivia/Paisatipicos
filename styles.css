@@ -66,12 +66,15 @@ nav ul li ul {
     background: #fff;
     padding: 1rem;
     border: 1px solid #ccc;
-    z-index: 1; /* Adicionado para manter acima */
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
     text-align: left; /* Alinhar texto à esquerda */
+    transition: opacity 0.3s, visibility 0.3s; /* Transição suave */
 }
 
 nav ul li:hover ul {
     display: block;
+    opacity: 1; /* Exibir com transição suave */
+    visibility: visible; /* Garante que o submenu esteja visível */
 }
 
 nav ul li ul li {
@@ -241,7 +244,7 @@ footer {
         background-color: #1e90ff; /* Azul */
         text-align: center;
         border-radius: 0;
-        z-index: 1; /* Mostra o menu sobre outros elementos */
+        z-index: 1000; /* Mostra o menu sobre outros elementos */
     }
 
     nav ul.active {
