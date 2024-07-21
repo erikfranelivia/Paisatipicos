@@ -24,6 +24,39 @@ header #logo {
     width: auto;
 }
 
+#material-de-apoio {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#material-de-apoio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#material-de-apoio p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background-color: #218838;
+}
+
+
 header h1 {
     margin: 0;
     font-size: 2rem;
