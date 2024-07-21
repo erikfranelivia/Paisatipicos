@@ -268,7 +268,7 @@ form button:hover {
 /* Estilos para o rodapé */
 footer {
     background-color: #1e90ff; /* Azul */
-    color: #fff; /* Branco */
+    color: #1e90ff; /* Branco */
     text-align: center;
     padding: 1rem 0;
     position: relative;
