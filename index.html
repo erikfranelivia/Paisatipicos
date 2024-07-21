@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Link para Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-4P1odCRu7sGDAXIooQt1KtR0qz3k4pz1lM5ghgMkTy9jI96J3L4C5YXyI+GGH8vNMDz4l03F9ay21F1dU+dyvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Incluir a Biblioteca ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
@@ -68,54 +70,51 @@
         <h3>Pensamento Visual</h3>
         <p>O Pensamento Visual é uma forma única de processamento de informações entre crianças autistas, que muitas vezes pensam de maneira visual e espacial. Este estilo de pensamento pode ser valorizado e desenvolvido através de atividades artísticas, jogos de quebra-cabeça e programação visual. <a href="https://www.autismspeaks.org/what-aba" target="_blank">Saiba mais</a>.</p>
         <h3>Aprendizado Multissensorial</h3>
-        <p>O Aprendizado Multissensorial utiliza múltiplos sentidos (visão, audição, tato, olfato e paladar) para ensinar habilidades acadêmicas e sociais às crianças autistas. Este método promove a retenção de informações e o engajamento cognitivo através de atividades práticas e experiências sensoriais. <a href="https://www.tuasaude.com/autismo/#tratamento" target="_blank">Saiba mais</a>.</p>
+        <p>O Aprendizado Multissensorial envolve o uso de múltiplos sentidos (visão, audição, tato) para ensinar novas habilidades. Crianças autistas podem se beneficiar de abordagens multissensoriais, que promovem a retenção de informações e o engajamento no aprendizado. <a href="https://www.autismspeaks.org/what-aba" target="_blank">Saiba mais</a>.</p>
     </section>
     <section id="blog">
         <h2>Blog</h2>
-        <article>
-            <h3>Como Identificar Sinais de Autismo em Crianças Pequenas</h3>
-            <p>Identificar sinais precoces de autismo pode ser desafiador para pais e cuidadores. Neste artigo, discutimos alguns sinais comuns que podem indicar a necessidade de uma avaliação profissional.</p>
-            <a href="#" class="read-more">Leia mais</a>
-            <div class="full-article">
-                <p>Observar o desenvolvimento de uma criança pequena é uma das melhores maneiras de identificar sinais precoces de autismo. Alguns sinais comuns incluem falta de contato visual, atraso na fala, dificuldade em interagir socialmente e comportamentos repetitivos. É importante notar que nem todas as crianças autistas apresentam os mesmos sinais, e a gravidade dos sintomas pode variar significativamente. Se você está preocupado com o desenvolvimento de seu filho, consulte um profissional de saúde para uma avaliação completa.</p>
-            </div>
-        </article>
-        <article>
-            <h3>Benefícios da Terapia Comportamental para Crianças Autistas</h3>
-            <p>A terapia comportamental, como a Análise Comportamental Aplicada (ABA), tem sido amplamente utilizada no tratamento do autismo devido aos seus benefícios comprovados no desenvolvimento de habilidades sociais, linguísticas e cognitivas.</p>
-            <a href="#" class="read-more">Leia mais</a>
-            <div class="full-article">
-                <p>A terapia comportamental baseada em ABA foca em reforçar comportamentos positivos e reduzir comportamentos problemáticos através de estratégias personalizadas. Para crianças autistas, isso pode significar sessões estruturadas que incentivam interações sociais, aprendizado acadêmico e habilidades diárias. Os benefícios da terapia comportamental incluem melhorias na comunicação, habilidades sociais e independência, proporcionando às crianças autistas as ferramentas necessárias para alcançar seu potencial máximo.</p>
-            </div>
-        </article>
-        <article>
-            <h3>Como Apoiar Irmãos de Crianças Autistas</h3>
-            <p>Os irmãos de crianças autistas desempenham um papel crucial no apoio e na compreensão das necessidades únicas de seus irmãos. Neste artigo, exploramos maneiras eficazes de apoiar irmãos e promover um relacionamento saudável entre eles.</p>
-            <a href="#" class="read-more">Leia mais</a>
-            <div class="full-article">
-                <p>É comum que irmãos de crianças autistas sintam uma mistura de emoções, desde orgulho e amor até frustração e confusão. Para apoiar irmãos, é importante oferecer espaço para expressar seus sentimentos, educar sobre o autismo de uma maneira acessível e incluir atividades que promovam a conexão e o entendimento mútuo. Ao fortalecer o relacionamento entre irmãos, você ajuda a criar um ambiente familiar de apoio e compreensão para todas as crianças envolvidas.</p>
-            </div>
-        </article>
+        <div class="blog-posts">
+            <article>
+                <h3>Dicas para Pais de Autistas</h3>
+                <p>Conselhos práticos para lidar com os desafios diários de criar uma criança autista.</p>
+            </article>
+            <article>
+                <h3>Entrevista com Especialista</h3>
+                <p>Uma conversa com um especialista em autismo sobre as últimas pesquisas e tratamentos.</p>
+            </article>
+            <article>
+                <h3>Histórias de Sucesso</h3>
+                <p>Relatos inspiradores de famílias que superaram obstáculos e celebraram conquistas.</p>
+            </article>
+        </div>
+        <button onclick="window.location.href='https://www.autismparentingmagazine.com/'">Ver mais artigos</button>
     </section>
     <section id="contact">
         <h2>Contato</h2>
-        <form action="#">
+        <form>
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
-            <label for="email">E-mail:</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
-   <footer>
-    <p>&copy; 2024 Site para Pais de Autistas. Todos os direitos reservados.</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/seuperfil" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/seuperfil" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/seuperfil" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
-
-
+    <footer>
+        <p>&copy; 2024 Site para Pais de Autistas. Todos os direitos reservados.</p>
+    </footer>
+    <!-- Script para Ativar ScrollReveal -->
+    <script>
+        ScrollReveal().reveal('header', { duration: 2000, origin: 'top', distance: '50px' });
+        ScrollReveal().reveal('#home', { duration: 2000, origin: 'left', distance: '50px' });
+        ScrollReveal().reveal('#about', { duration: 2000, origin: 'right', distance: '50px' });
+        ScrollReveal().reveal('#treatments', { duration: 2000, origin: 'bottom', distance: '50px' });
+        ScrollReveal().reveal('#rights', { duration: 2000, origin: 'left', distance: '50px' });
+        ScrollReveal().reveal('#cognitive-evolution', { duration: 2000, origin: 'right', distance: '50px' });
+        ScrollReveal().reveal('#blog', { duration: 2000, origin: 'bottom', distance: '50px' });
+        ScrollReveal().reveal('#contact', { duration: 2000, origin: 'top', distance: '50px' });
+    </script>
+</body>
+</html>
