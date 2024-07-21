@@ -1,0 +1,276 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Cor de fundo do corpo */
+    color: #333; /* Cor padrão do texto */
+}
+
+header {
+    background: #1e90ff; /* Azul */
+    color: #fff; /* Branco */
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header #logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centralizar a navegação */
+    background-color: #1e90ff; /* Azul */
+    border-radius: 10px; /* Arredondar os cantos */
+}
+
+nav ul li {
+    display: inline-block; /* Alterado de inline para inline-block */
+    margin: 0 1rem;
+    position: relative; /* Adicionado */
+    transition: transform 0.3s, text-shadow 0.3s; /* Transição para efeito de destaque */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Aumentar o padding para espaçamento */
+    background-color: transparent; /* Fundo transparente */
+}
+
+nav ul li:hover {
+    transform: translateY(-2px); /* Efeito de destaque para frente */
+}
+
+nav ul li:hover > a {
+    text-shadow: 0 0 5px #1e90ff, 0 0 10px #1e90ff; /* Contorno azul */
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    z-index: 1; /* Adicionado para manter acima */
+    text-align: left; /* Alinhar texto à esquerda */
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0.5rem 0;
+    transition: color 0.3s, background-color 0.3s; /* Transição para efeito de destaque */
+}
+
+nav ul li ul li a {
+    color: #333;
+}
+
+nav ul li ul li a:hover {
+    color: #1e90ff; /* Azul */
+    background-color: #e6f7ff; /* Fundo azul claro */
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1e90ff; /* Azul */
+}
+
+h3 {
+    color: #666;
+}
+
+p {
+    color: #666;
+}
+
+footer {
+    background: #1e90ff; /* Azul */
+    color: #fff; /* Branco */
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    clear: both; /* Adicionado */
+}
+
+footer p {
+    color: #fff; /* Branco */
+    margin: 0;
+}
+
+/* Estilos para formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background: #1e90ff; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #007acc; /* Azul mais escuro */
+}
+
+/* Estilos para o efeito de Scroll Reveal */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.read-more {
+    color: #1e90ff; /* Azul */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #007acc; /* Azul mais escuro */
+}
+
+.full-article {
+    display: none;
+    padding-top: 1rem;
+}
+
+.full-article.show {
+    display: block;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #1e90ff; /* Azul */
+    color: #fff; /* Branco */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both; /* Adicionado */
+}
+
+/* Estilos para os ícones das redes sociais */
+.social-icons {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #4682B4; /* Cor azul do ícone */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #333; /* Cor mais escura ao passar o mouse */
+}
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: none; /* Esconde o menu principal */
+        position: absolute;
+        top: 3.5rem; /* Ajusta a posição do menu suspenso */
+        left: 0;
+        width: 100%;
+        background-color: #1e90ff; /* Azul */
+        text-align: center;
+        border-radius: 0;
+        z-index: 1; /* Mostra o menu sobre outros elementos */
+    }
+
+    nav ul.active {
+        display: block; /* Mostra o menu principal ao clicar */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    nav ul li:hover > a {
+        text-shadow: none; /* Remove o efeito de sombra ao passar o mouse */
+    }
+
+    .social-icons {
+        margin-top: 2rem; /* Ajusta a margem dos ícones sociais */
+    }
+
+    .social-icon {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 1rem 0;
+    }
+}
