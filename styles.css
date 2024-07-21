@@ -32,29 +32,68 @@ header #logo {
     text-align: center;
 }
 
+#material-de-apoio {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
 #material-de-apoio h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-#material-de-apoio p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.imagem-download {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-download img {
+    width: 100%;
+    max-width: 400px; /* Ajuste o tamanho máximo conforme necessário */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.imagem-download img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.imagem-download:hover .overlay {
+    opacity: 1; /* Mostra a sobreposição ao passar o mouse */
 }
 
 .btn-download {
-    display: inline-block;
     background-color: #28a745;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    text-align: center;
 }
 
 .btn-download:hover {
     background-color: #218838;
 }
+
 
 
 header h1 {
